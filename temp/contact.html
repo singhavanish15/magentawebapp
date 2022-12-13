@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact | MAGENTA{% endblock title %}
+{% block body %}
+    <main>
+        <section class="section-base section-full-width no-padding">
+            <div class="container">
+              <!--  <div class="google-map" data-marker="media/marker.png" data-zoom="12" data-coords="51.5156177,-0.0919983"></div> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22418.252487482514!2d77.15983038326041!3d28.532101367936047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1fc117e234d7%3A0x32fc991aeba6838c!2sMagenta+Finance+Services+Private+Limited!5e0!3m2!1sen!2sin!4v1537775101956" width="1500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="section-base section-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="title">
+                            <h2>Write us</h2>
+                            <p>Contact us from here</p>
+                        </div>
+                        <form action="/contact"  method="post" >
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input id="name" name="name" placeholder="Name" type="text" class="input-text" required>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <input id="email" name="email" placeholder="Email" type="email" class="input-text" required>
+                                </div>
+                            </div>
+
+                            <textarea id="messagge" name="messagge" class="input-textarea" placeholder="Write something ..." required></textarea>
+
+                          <!--  <div class="form-checkbox">
+                                <input type="checkbox" id="check" name="check" value="check" required>
+                                <label for="check">You accept the terms of service and the privacy policy</label>
+                            </div> -->
+
+                            <button class="btn btn-xs" type="submit">Send messagge</button>
+
+                          <!--  <div class="success-box">
+                                <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
+                            </div>
+
+                            <div class="error-box">
+                                <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
+                            </div>-->
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <hr class="space visible-md" />
+                        <div class="boxed-area">
+                            <h3>Contacts</h3>
+                            <p>
+                                Magenta Finance Services Private Limited
+                            </p>
+                            <ul class="text-list text-list-line">
+                                <li><b>Address</b><hr />
+                                    <p>Shop 07, 2nd Floor, Plot No.7, 
+                                    </p>
+                                </li>
+                                <li><b></b><hr />
+                                    <p>Local Shopping Center, Sector-B,
+                        
+                                    </p>
+                                </li>
+                                <li><b></b><hr />
+                                    <p>Pocket-1, Vasant Kunj,
+                                        New Delhi-110070
+                                    </p>
+                                </li>  
+                                <li><b>Web</b><hr /><p>https://www.magentafinance.co.in/</p></li>
+                                <li><b>Email</b><hr /><p>info@magentafinance.co.in</p></li>
+                                <li><b>Phone</b><hr /><p>011-490 75 204</p></li>
+                            </ul>
+                            <hr class="space-sm" />
+                            <div class="icon-links icon-social icon-links-grid social-colors">
+                                <a class="facebook"><i class="icon-facebook"></i></a>
+                                <a class="twitter"><i class="icon-twitter"></i></a>
+                                <a class="instagram"><i class="icon-instagram"></i></a>
+                                <a class="pinterest"><i class="icon-pinterest"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

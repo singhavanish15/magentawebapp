@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Gallery | MAGENTA{% endblock title %}
+
+{% block body %}
+<main>
+    <section class="section-base ">
+       
+        <div class="container">
+            
+            <div class="album" data-album-anima="fade-bottom" data-columns-md="2" data-columns-sm="1">
+                 
+                <div class="album-list">
+                    {% for i in gallery_con %}   
+                    <div class="album-box">
+                        <a href="#" class="img-box img-scale">
+                            <img src="{{i.typename_bgpic.url}}" alt="">
+                        </a>
+                        <div class="caption">
+                            <h3>{{i.gallery_typename}}</h3>
+                        </div>
+                    </div>
+                    {% endfor %}  
+                </div>
+                
+                <div class="cnt-album-box">
+                   
+                    <p class="album-title"><span>...</span> <a>Album list</a></p>
+                    
+                    <div class="album-item">
+                        
+                        <div class="grid-list list-gallery" data-lightbox-anima="fade-top" data-columns="3" data-columns-md="2">
+                            {% for j in gall_subitem %}
+                            <div class="grid-box">
+                               
+                                <div class="grid-item">
+                                    <a class="img-box" href="{{j.subitem_img.url}}">
+                                        <img src="{{j.subitem_img.url}}" alt="">
+                                    </a>
+                                </div>
+                                  
+                            {% endfor %}   
+                            </div>
+                            
+                            
+                            <div class="list-pagination">
+                                <ul class="pagination" data-page-items="6" data-pagination-anima="fade-right"></ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                   
+                    
+                   
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </section>
+    <section class="section-base section-color">
+        <div class="container">
+            <div class="title">
+                <h2>Multimedia and videos</h2>
+                <p>Gallery</p>
+            </div>
+            <ul class="slider controls-top-right" data-options="type:carousel,nav:true,perView:3,perViewMd:2,perViewXs:1,gap:30,controls:out,autoplay:3000">
+                <li>
+                    <a class="img-box btn-video lightbox" href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-top">
+                        <img src="http://via.placeholder.com/800x500" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="img-box btn-video lightbox" href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-top">
+                        <img src="http://via.placeholder.com/800x500" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="img-box btn-video lightbox" href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-top">
+                        <img src="http://via.placeholder.com/800x500" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="img-box btn-video lightbox" href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-top">
+                        <img src="http://via.placeholder.com/800x500" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+{% endblock %}

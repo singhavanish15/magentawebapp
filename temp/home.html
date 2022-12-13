@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | MAGENTA</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="static/themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="static/themekit/css/style.css">
+    <link rel="stylesheet" href="static/themekit/css/glide.css">
+    <link rel="stylesheet" href="static/themekit/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/themekit/css/content-box.css">
+    <link rel="stylesheet" href="static/themekit/css/media-box.css">
+    <link rel="stylesheet" href="static/themekit/css/contact-form.css">
+    <link rel="stylesheet" href="static/skin.css">
+    <link rel="icon" href="static/media/favicon1.png">
+</head>
+<body>
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-transparent light align-right" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="#">
+                    <img class="logo-default scroll-hide" src="static/media/magentalogo.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="static/media/magentalogo.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="static/media/magentalogo.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="static/media/magentalogo.png" alt="logo" />
+                </a>
+            </div>
+            <i class="menu-btn"></i>
+            <div class="menu-cnt">
+                <ul id="main-menu">
+                    
+                        
+                        
+                            <li><a href="home.html">Home</a></li>
+                           
+                        
+                    
+                    <li class="dropdown">
+                        <a href="#">About Us</a>
+                        <ul>
+                            <li class="dropdown-submenu">
+                                <a>About</a>
+                                <ul>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="team">Team</a></li>
+                                    <li><a href="history.html">History</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#">Services</a>
+                                <ul>
+                                    <li><a href="service-1.html">Our Product</a></li>
+                                    <li><a href="service-2.html">Our Business Model</a></li>
+                                    <li><a href="service-3.html">Our Operational Model</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a>content</a>
+                                <ul>
+                                    <li><a href="faq.html">Faq</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="gallery">Gallery</a></li>
+                                    <li><a href="career.html">Career</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="#">Downloads</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">MIS-Login</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Contacts</a>
+                        <ul>
+                            <li><a href="contact">Contacts</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <div class="menu-right">
+                  
+                    <form role="search" method="get" id="searchform" class="search-btn">
+                        <div class="search-box-menu">
+                            <input type="text" placeholder="Search ...">
+                            <i></i>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="section-video section-home-slider light">
+            <video autoplay loop muted poster="">
+                <source src="static/media/video.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <hr class="space" />
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="slider" data-options="type:slider,perView:1,arrows:true,nav:true,autoplay:3500" data-anima="fade-right" data-time="2000">
+                            <li>
+                                <h1 class="slider-text">Magenta Finance Services (P) Limited</h1>
+                                <a class="img-box" href="#">
+                                    <img src="static/media/hero-bg1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <h1 class="slider-text">Welcome To Magenta</h1>
+                                <a class="img-box" href="#">
+                                    <img src="static/media/hero-bg2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <h1 class="slider-text">Small Opportunities Are Often The Beginning Of Great</h1>
+                                <a class="img-box" href="#">
+                                    <img src="static/media/hero-bg3.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                {% block content%}
+                                <div class="grid-list gap-18" data-columns="1" data-columns-md="3" data-columns-sm="3" data-columns-xs="1">
+                                    
+                                    <div class="grid-box">
+                                        <div class="grid-item">
+                                            <div class="counter counter-vertical counter-icon" data-anima="fade-right" data-time="3000">
+                                                <div>
+                                                    <h3>Clients</h3>
+                                                    <div class="value"> 
+                                                        <span data-to="{{resp.1}}" data-speed="5000"> {{resp.1}}</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="counter counter-vertical counter-icon" data-anima="fade-right" data-time="3000">
+                                                <div>
+                                                    <h3>Branches</h3>
+                                                    <div class="value">
+                                                        <span data-to="{{resp.0}}" data-speed="5000">{{resp.0}}</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="counter counter-vertical counter-icon" data-anima="fade-right" data-time="3000">
+                                                <div>
+                                                    <h3>Districts</h3>
+                                                    <div class="value">
+                                                        <span data-to="{{resp.2}}" data-speed="5000">{{resp.2}}</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="counter counter-vertical counter-icon" data-anima="fade-right" data-time="3000">
+                                                <div>
+                                                    <h3>Portfolio</h3>
+                                                    <div class="value">
+                                                        <div class="portfolio">
+                                                          <strong  data-speed="5000">{{resp.3}}</strong>
+                                                          <span>+</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            {%endblock%}
+                            <div class="col-lg-8" data-anima="fade-right" data-time="4000">
+                                <h2><span>About</span> Us  </h2>
+                                <p>
+                                    We work with women from rural and semi-urban areas.
+                                    We focus on providing financial support to those poor women who are not able to take benefits of the Banking system.
+                                    
+                                </p>
+                                <a href="#" class="btn btn-sm">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space" />
+                <hr class="space" />
+            </div>
+        </section>
+        <section class="section-base section-color section-overflow-top">
+            <div class="container">
+                <div class="grid-list" data-columns="3" data-columns-md="1">
+                    <div class="grid-box">
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" class="img-box"><img src="static/media/vision.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Vision</h2>
+                                  
+                                    <p>
+                                        To strive for a life of dignity for The Poor, especially women and under privileged people of the society by working in solidarity with the Poor through providing financial services in the most efficient manner, which help in promoting livelihood opportunity and economic development
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" class="img-box"><img src="static/media/mission.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Mission</h2>
+                                  
+                                    <p>
+                                        To provide innovative and sustainable financial accessibility to the rural, semi-urban and urban poor people, especially women by working shoulder to shoulder with them for women empowerment, so that they can achieve their ambitions and live financially stable better life.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" class="img-box"><img src="static/media/objective.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Objective</h2>
+                                   
+                                    <p>
+                                        To Make Half A Million Poor Families, Who Are Out Of The Normal Banking System In Rural, Urban And Semi-Urban Areas In India Financially Independent By 2022.
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row row-fit-lg" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <ul class="slider light" data-options="arrows:true,nav:false">
+                            <li>
+                                <a class="img-box img-box-caption lightbox" href="http://via.placeholder.com/800x500" data-lightbox-anima="fade-top">
+                                    <img src="static/media/banner2.jpg" alt="">
+                                    <span>MAGENTA SAHELI</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Our values and goals</h2>
+                        </div>
+                        <p>
+                            We understand the deep-rooted need for the people to raise their living standards and income levels. We also understand that access to low-ticket credit can be a big step for people who have big dreams and limited means of achieving those dreams. Microfinance loans from Majenta Micro Finance, one of the subsidiaries of HPPI, provide access to reliable and affordable financial services to create a powerful economic platform for all.
+
+Our clients comprise mainly of women living in rural and semi-urban areas. Our focus is reaching out to unbanked and providing financial services to women entrepreneurs belonging to the economically and socially deprived section of the society. Our responsibilities are not restricted merely to financial support but also to acquaint the clients to manage their financials by disseminating Financial Literacy to them. Majenta believes in robust business practices, transparent policies expressed in our Customer Centric efforts towards our Clientele. Majenta aspires to create value and balanced growth for all its stakeholders while keeping clients at the centre.
+
+Magenta Finance Services Private Limited (MFSPL) was incorporated in 2010 at New Delhi. It was registered as a Non-Banking Finance company (NBFC) MFI in 2017 and started operations in financing under Joint lending model in 2018.The company’s operations are currently spread over the states of Haryana and Punjab with a network of 3 branches. MFSPL has assets under its management amounting to ₹ 15.37 Crs. as on March 31, 2021 with an active borrower base of 6321
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-image light" data-parallax="scroll" data-image-src="static/media/banner1.jpg">
+            <div class="container">
+               <!-- <div class="row" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>The state of art service</h2>
+                            <p>About us</p>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                            Utenim ad minim veniam quis nostrud exercitation ullamco laboris.
+                        </p>
+                        <a href="#" class="btn-text active">All services</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="grid-list gap-40" data-columns="2" data-columns-xs="1">
+                            <div class="grid-box">
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-pen"></i>
+                                        <div class="caption">
+                                            <h3>Regulated</h3>
+                                            <p>Lorem ipsum amete</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-security-camera"></i>
+                                        <div class="caption">
+                                            <h3>Secure</h3>
+                                            <p>Lorem ipsum amete</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-gears"></i>
+                                        <div class="caption">
+                                            <h3>Top hardware</h3>
+                                            <p>Lorem ipo dolore mio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-data-refresh"></i>
+                                        <div class="caption">
+                                            <h3>Updated</h3>
+                                            <p>Lorem ipsum amete</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-support"></i>
+                                        <div class="caption">
+                                            <h3>Premium team</h3>
+                                            <p>Lorem ipo dolore mio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="icon-box icon-box-left">
+                                        <i class="im-coins"></i>
+                                        <div class="caption">
+                                            <h3>Money back</h3>
+                                            <p>Lorem ipsum amete</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+                </div>
+            </div>
+        </section>
+        <section class="section-base section-color">
+            <div class="container">
+                <div class="title" data-anima="fade-bottom" data-time="1000">
+                    <h2>Board of Directors</h2>
+                    
+                </div>
+                <hr class="space-xs" />
+                <div class="tab-box tab-top-right" data-tab-anima="fade-bottom" data-anima="fade-bottom" data-time="1000">
+                    <ul class="tab-nav">
+                        <li><a href="#">Magenta</a></li>
+                        <li><a href="#">Financial Inclusion</a></li>
+                        <li class="active"><a href="#">Women Empowerment</a></li>
+                    </ul>
+                    
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p>
+                                MAGENTA Board has five Directors out of which four are Indian national and fifth individual is Danish citizen. All the five individuals have been passionately involved in the banking sector, development sector, working in the domain of livelihood, education and microfinance sub sectors in the country.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <hr class="space-sm" />
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cnt-box cnt-box-side boxed">
+                                <a href="#" class="img-box"><img src="static/media/raj-kumar.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Raj Kumar Singh</h2>
+                                    <div class="extra-field">Managing Director</div>
+                                    <p>
+                                        Mr. Raj Kumar Singh has a total work experience of more than 20 years out of which approx 15 years experience in the microfinance sector. 
+                                    </p>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cnt-box cnt-box-side boxed">
+                                <a href="#" class="img-box"><img src="static/media/kim-peter.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2> Kim Peter Hansen</h2>
+                                    <div class="extra-field">Director</div>
+                                    <p>
+                                        He is a director of the Company and has 20 years’ experience with trading and trade finance, sourcing products in China and selling overseas to Africa and Europe.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p>
+                                
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <hr class="space-sm" />
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cnt-box cnt-box-side boxed">
+                                <a href="#" class="img-box"><img src="static/media/jal-karan.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Jal Karan Singh Kharb</h2>
+                                    <div class="extra-field">Independent Director</div>
+                                    <p>
+                                        Mr. Jal Karan Singh Kharb, Ex. Executive Director Allahabad Bank. Mr. Kharb was earlier working with Dena Bank as General Manager, Chairman Regional Rural Bank. 
+                                    </p>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="col-lg-6">
+                            <div class="cnt-box cnt-box-side boxed">
+                                <a href="#" class="img-box"><img src="static/media/asok-kumar.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Asok kumar Rathnam</h2>
+                                    <div class="extra-field">Independent Director</div>
+                                    <p>
+                                        Mr. Asokkumar Rathnam was worked as an AGM in SBI and DGM in Axis Bank. He is a veteran banker and microfinance expert in India.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <hr class="space-sm" />
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cnt-box cnt-box-side boxed">
+                                <a href="#" class="img-box"><img src="static/media/Tribikram.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Tribikram Nayak </h2>
+                                    <div class="extra-field">Independent Director</div>
+                                    <p>
+                                        He is a B.Sc (Physics) graduate. He has more than 25 years’ experience in teaching, education, educational training programs and other social welfare activities. 
+                                    
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <a href="#" class="btn btn-border btn-xs">Read more</a>
+                    </div>   
+                    </div>
+        </section>
+        <section class="section-base">
+            <div class="container">
+                <div class="row align-items-center" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Income Generation Loan (Abhimanini)</h2>
+                            <p>Product</p>
+                        </div>
+                        <p>
+                            Abhimanini stands for “Proud of Herself ”. This loan is designed especially for low-income households who aspire to become financially independent, build self-respect in themselves, 
+                            can turn their dreams into reality and lead a happy and colourful life.
+                        </p>
+                        <a href="#" class="btn btn-border btn-xs">Learn more</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/media/banner3.jpg" alt="" />
+                    </div>
+                </div>
+
+                <hr class="space-sm" />
+                <hr class="space visible-md" />
+                <div class="row align-items-center" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <img src="static/media/banner4.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Business Model</h2>
+                            <p></p>
+                        </div>
+                        <p>
+                            We work with women from rural and semi-urban areas. We focus on providing financial support to those poor women who are not able to take benefits of the Banking system. Our  financial support is in the form of small loans to these poor women, so that they can start or expand simple business and increase their income.
+                        </p>
+                        <a href="#" class="btn btn-xs">Learn more</a>
+                    </div>
+                </div>
+
+                <hr class="space-sm" />
+                <hr class="space visible-md" />
+                <div class="row align-items-center" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Opertion Model</h2>
+                            <p></p>
+                        </div>
+                        <p>
+                            A well-defined process is followed by the MFI for area selection, group formation, loan appraisal, disbursement, and collection.
+                        </p>
+                        <a href="#" class="btn btn-border btn-xs">Learn more</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="static/media/banner5.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-base section-color">
+            <div class="container">
+                <div class="row" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <div class="title">
+                            <h2>Magenta Finance Services Private Limited</h2>
+                            <p>The Company</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-right align-left-md">
+                        <hr class="space-sm hidden-md" />
+                        <a href="#" class="btn-text active">View services</a>
+                    </div>
+                </div>
+                <hr class="space" />
+                <div class="box-steps" data-anima="fade-bottom" data-time="1000">
+                    <div class="step-item">
+                        <span>1</span>
+                        <div class="content">
+                            <h3>Legal Status</h3>
+                            <div>
+                                <p>
+                                    Private Limited Company registered with RBI as Non-Banking Finance Company NBFC-MFI status. (November: 2017) It is a member of Microfinance Institutions Network (MFIN) since Dec.2020
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span>2</span>
+                        <div class="content">
+                            <h3>Lendind Model & Area</h3>
+                            <div>
+                                <p>
+                                    JLG (Joint Liability Group)
+                                </p>
+                                <p>
+                                    3 States (Punjab, Haryana, Uttar Pradesh)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span>3</span>
+                        <div class="content">
+                            <h3>Branches (4)</h3>
+                            <div>
+                                <p>
+                                    Kaithal, Karnal (Haryana)
+                                </p>
+                                <p>
+                                    Sangrur (Punjab)
+                                </p>
+                                <p>
+                                    Saharanpur (Uttar Pradesh)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-base">
+            <div class="container">
+                <table class="table table-grid table-border table-logos table-full-sm" data-anima="fade-bottom" data-time="1000">
+                    <tbody>
+                        <h3>Our Funders</h3>
+                        <tr>
+                            <td><img src="static/media/partner0.png" alt="" /></td>
+                            <td><img src="static/media/partner1.jpg" alt="" /></td>
+                            <td><img src="static/media/partner2.png" alt="" /></td>
+                            <td><img src="static/media/partner3.jpg" alt="" /></td>
+                            <td><img src="static/media/partner4.jpg" alt="" /></td>
+                        </tr>
+                    </tbody>
+                </table>      
+            </div>
+        </section>
+        <section class="section-base section-color">
+            <div class="container">
+                <section class="section-base section-color section-overflow-top">
+                    <div class="title" data-anima="fade-bottom" data-time="1000">
+                        <h2>Our Partners and Networks</h2>   
+                    </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="grid-list" data-columns="4" data-columns-md="1">
+                            <div class="grid-box">
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                        <h3>Credit Bureau Services</h3>
+                                        <li><img src="static/media/credit_score0.jpg" alt="" /></li>
+                                        <li><img src="static/media/credit_score2.jpg" alt="" /></li>
+                                        <li><img src="static/media/credit_score1.jpg" alt="" /></li>
+                                        <li><img src="static/media/credit_score3.jpg" alt="" /></li>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                        <h3>Industry Associations</h3>
+                                        <li><img src="static/media/partner0.png" alt="" /></li>
+                                        <li><img src="static/media/partner5.jpg" alt="" /></li>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                        <h3>Partners (Audit & Leagal)</h3>
+                                        <li><img src="static/media/partner0.png" alt="" /></li>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                        <h3>Insurance</h3>
+                                        <li><img src="static/media/insurance1.png" alt="" /></li>
+                                        <li><img src="static/media/insurance2.png" alt="" /></li>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <div class="row row-fit-lg" data-anima="fade-bottom" data-time="1000">
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                </section>
+                
+            </div>
+        </section>
+        <section class="section-image light align-center ken-burn-center" data-parallax="scroll" data-image-src="static/media/nearfooter.jpg">
+            <div class="container" data-anima="fade-bottom" data-time="1000">
+                <a href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" class="btn-video lightbox" data-lightbox-anima="fade-top"></a>
+                <hr class="space" />
+                <h2 class="width-650">Find an <span class="text-line">evolved</span> and strong connection between our Saheli members and MFSPL </h2>
+                <hr class="space" />
+                <!--  <table class="table table-grid table-border align-center table-logos table-10">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="static/media/footer-bg1.jpg" alt="" />
+                            </td>
+                            <td>
+                                <img src="static/media/footer-bg2.jpg" alt="" />
+                            </td>
+                            <td>
+                                <img src="http://via.placeholder.com/374x103" alt="" />
+                            </td>
+                            <td>
+                                <img src="http://via.placeholder.com/374x103" alt="" />
+                            </td>
+                            <td>
+                                <img src="http://via.placeholder.com/374x103" alt="" />
+                            </td>
+                            <td>
+                                <img src="http://via.placeholder.com/374x103" alt="" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+        </section>
+
+    </main>
+    <i class="scroll-top-btn scroll-top show"></i>
+    <footer class="light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>MAGENTA</h3>
+                    <p>MFSPL is a member of Microfinance Institutions Network (MFIN) which is a Self-Regulatory Organization - an apex Body nominated by the RBI to oversee MFIs.
+                        The members of SROs follow a standard conduct in procedures and processes that helps in promoting ethical way of doing business and brings the confidence of investors and borrowers in the member company.</p>
+                    <div class="icon-links icon-social icon-links-grid social-colors">
+                        <a class="facebook"><i class="icon-facebook"></i></a>
+                        <a class="twitter"><i class="icon-twitter"></i></a>
+                        <a class="instagram"><i class="icon-instagram"></i></a>
+                        <a class="pinterest"><i class="icon-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Resources</h3>
+                    <ul class="icon-list icon-line">
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">About us and the company</a></li>
+                        <li><a href="#">Services and projects</a></li>
+                        <li><a href="#">Contact us online</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="text-list text-list-line">
+                        <li><b>Address</b><hr />
+                            <p>Shop/Unit No. 07, 2nd Floor, Plot No.7, 
+                            </p>
+                        </li>
+                        <li><b></b><hr />
+                            <p>Local Shopping Center, Sector-B,
+                
+                            </p>
+                        </li>
+                        <li><b></b><hr />
+                            <p>Pocket-1, Vasant Kunj,
+                                New Delhi-110070
+                            </p>
+                        </li>    
+                        <li><b>Email</b><hr /><p>info@magentafinance.co.in</p></li>
+                        <li><b>Phone</b><hr /><p>011-490 75 204</p></li>
+                        <li><b>Toll-Free</b><hr /><p>1800-1020-638</p></li>
+                        <li><b>Opening hours</b><hr /><p>8am-6pm Mon - Fri</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <span>© 2022 MFSPL - Designed and Maintained by <a href="" target="_blank">Humana Tech</a>.</span>
+                <span><a href="#">Contact us</a> | <a href="#">Privacy policy</a></span>
+            </div>
+        </div>
+        <link rel="stylesheet" href="static/themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="static/themekit/scripts/jquery.min.js"></script>
+        <script src="static/themekit/scripts/main.js"></script>
+        <script src="static/themekit/scripts/parallax.min.js"></script>
+        <script src="static/themekit/scripts/glide.min.js"></script>
+        <script src="static/themekit/scripts/custom.js"></script>
+        <script src="static/themekit/scripts/progress.js"></script>
+        <script src="static/themekit/scripts/tab-accordion.js"></script>
+        <script src="static/themekit/scripts/magnific-popup.min.js"></script>
+        <script src="static/themekit/scripts/imagesloaded.min.js"></script>
+        <script src="static/themekit/scripts/contact-form/contact-form.js"></script>
+    </footer>
+</body>
+</html>

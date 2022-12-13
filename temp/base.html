@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock title %}</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="static/themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="static/themekit/css/style.css">
+    <link rel="stylesheet" href="static/themekit/css/glide.css">
+    <link rel="stylesheet" href="static/themekit/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/themekit/css/content-box.css">
+    <link rel="stylesheet" href="static/themekit/css/media-box.css">
+    <link rel="stylesheet" href="static/themekit/css/contact-form.css">
+    <link rel="stylesheet" href="static/skin.css">
+    <link rel="icon" href="static/media/favicon1.png">
+</head>
+<body>
+    <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="#">
+                    <img class="logo-default scroll-hide" src="static/media/magentalogo.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="static/media/magentalogo.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="static/media/magentalogo.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="static/media/magentalogo.png" alt="logo" />
+                </a>
+            </div>
+            <i class="menu-btn"></i>
+            <div class="menu-cnt">
+                <ul id="main-menu">
+                    <li class="dropdown">
+                        <a href="#">Home</a>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Pages</a>
+                        <ul>
+                            <li class="dropdown-submenu">
+                                <a>About</a>
+                                <ul>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="team">Team</a></li>
+                                    <li><a href="history.html">History</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#">Services</a>
+                                <ul>
+                                    <li><a href="service-1.html">Our Product</a></li>
+                                    <li><a href="service-2.html">Our Business Model</a></li>
+                                    <li><a href="service-3.html">Our Operational Model</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a>content</a>
+                                <ul>
+                                    <li><a href="faq.html">Faq</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="gallery">Gallery</a></li>
+                                    <li><a href="career.html">Career</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="#">Downloads</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">MIS-Login</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Contacts</a>
+                        <ul>
+                            <li><a href="contact">Contacts</a></li>
+                            
+                        </ul>
+                    </li>
+                  
+                </ul>
+                    
+                    
+            
+               <!-- <div class="menu-right">
+                    <div class="custom-area">
+                        139 Baker Street<br />
+                        London, United Kingdom
+                    </div>
+                    
+                    <form role="search" method="get" id="searchform" class="search-btn">
+                        <div class="search-box-menu">
+                            <input type="text" placeholder="Search ...">
+                            <i></i>
+                        </div>
+                    </form>
+                    
+                </div> -->
+            </div>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <footer class="light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>MAGENTA</h3>
+                    <p>MFSPL is a member of Microfinance Institutions Network (MFIN) which is a Self-Regulatory Organization - an apex Body nominated by the RBI to oversee MFIs.
+                        The members of SROs follow a standard conduct in procedures and processes that helps in promoting ethical way of doing business and brings the confidence of investors and borrowers in the member company.</p>
+                    <div class="icon-links icon-social icon-links-grid social-colors">
+                        <a class="facebook"><i class="icon-facebook"></i></a>
+                        <a class="twitter"><i class="icon-twitter"></i></a>
+                        <a class="instagram"><i class="icon-instagram"></i></a>
+                        <a class="pinterest"><i class="icon-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Resources</h3>
+                    <ul class="icon-list icon-line">
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">About us and the company</a></li>
+                        <li><a href="#">Services and projects</a></li>
+                        <li><a href="#">Contact us online</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="text-list text-list-line">
+                        <li><b>Address</b><hr />
+                            <p>Shop/Unit No. 07, 2nd Floor, Plot No.7, 
+                            </p>
+                        </li>
+                        <li><b></b><hr />
+                            <p>Local Shopping Center, Sector-B,
+                
+                            </p>
+                        </li>
+                        <li><b></b><hr />
+                            <p>Pocket-1, Vasant Kunj,
+                                New Delhi-110070
+                            </p>
+                        </li>    
+                        <li><b>Email</b><hr /><p>info@magentafinance.co.in</p></li>
+                        <li><b>Phone</b><hr /><p>011-490 75 204</p></li>
+                        <li><b>Toll-Free</b><hr /><p>1800-1020-638</p></li>
+                        <li><b>Opening hours</b><hr /><p>8am-6pm Mon - Fri</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <span>© 2022 MFSPL - Designed and Maintained by <a href="" target="_blank">Humana Tech</a>.</span>
+                <span><a href="#">Contact us</a> | <a href="#">Privacy policy</a></span>
+            </div>
+        </div>
+        <link rel="stylesheet" href="static/themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="static/themekit/scripts/jquery.min.js"></script>
+        <script src="static/themekit/scripts/main.js"></script>
+        <script src="static/themekit/scripts/parallax.min.js"></script>
+        <script src="static/themekit/scripts/glide.min.js"></script>
+        <script src="static/themekit/scripts/custom.js"></script>
+        <script src="static/themekit/scripts/progress.js"></script>
+        <script src="static/themekit/scripts/tab-accordion.js"></script>
+        <script src="static/themekit/scripts/magnific-popup.min.js"></script>
+        <script src="static/themekit/scripts/imagesloaded.min.js"></script>
+        <script src="static/themekit/scripts/contact-form/contact-form.js"></script>
+    </footer>
+</body>
+</html>
